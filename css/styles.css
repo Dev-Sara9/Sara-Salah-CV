@@ -1920,6 +1920,9 @@ pre code {
   .table-responsive-sm > .table-bordered {
     border: 0;
   }
+  #printLogo{
+    display: none;
+  }
 }
 @media (max-width: 767.98px) {
   .table-responsive-md {
@@ -1931,6 +1934,9 @@ pre code {
   .table-responsive-md > .table-bordered {
     border: 0;
   }
+  #printLogo{
+    display: none;
+  }
 }
 @media (max-width: 991.98px) {
   .table-responsive-lg {
@@ -1941,6 +1947,9 @@ pre code {
   }
   .table-responsive-lg > .table-bordered {
     border: 0;
+  }
+  #printLogo{
+    display: none;
   }
 }
 @media (max-width: 1199.98px) {
@@ -10114,4 +10123,98 @@ ul{
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
+}
+
+@page {
+  size: 210mm 297mm; 
+  /* Chrome sets own margins, we change these printer settings */
+  margin: 27mm 16mm 27mm 16mm; 
+}
+
+@media print 
+{
+    @page {
+      size: A4; /* DIN A4 standard, Europe */
+      margin:0;
+    }
+    html, body {
+        width: 210mm;
+        /* height: 297mm; */
+        height: 282mm;
+        font-size: 20px;
+        background: #FFF;
+        overflow:visible;
+    }
+    body {
+        padding-top:2mm;
+    }
+
+    #about {
+      padding-bottom: 10mm;
+      padding-top: 2mm;
+    }
+    #overviewid{
+      padding-bottom: 0mm;
+    }
+   
+    #SocID{
+      padding-top: 0mm;
+    }
+    #aboutLine{
+      padding-top: 0mm;
+      padding-bottom: 5mm;
+    }
+    #experience{
+        padding-top: 1mm;
+        padding-bottom: 1mm;
+    }
+    #Oraclehead{
+      padding-top: 15mm;
+    }
+   
+    #ExpLine{
+      padding-top: 20mm;
+      padding-bottom: 0mm;
+    }
+
+    #education{
+      padding-top: 20mm;
+      padding-bottom: 1mm;
+    }
+    #FirstED{
+      padding-bottom: 2mm;
+    }
+    #SeconedED{
+      padding-top: 2mm;
+    }
+     
+
+    #skills{
+      padding-top: 5mm;
+      padding-bottom: 0mm;
+    }
+
+    #backID{
+      padding-top: 30mm;
+    }
+    #SkLine{
+      padding-bottom: 0mm;
+      padding-top: 0mm;
+    }
+
+    #EDLine{
+      margin-top: 40mm;
+      margin-bottom: 20mm;
+    }
+
+    #LastED{
+      margin-bottom: 20mm;
+    }
+ 
+    #interests{
+      padding-top: 10mm;
+    }
+    #awards, #TargetLine, #printLogo{
+      display:none;
+    }
 }
