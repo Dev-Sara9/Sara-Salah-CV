@@ -14,7 +14,11 @@
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-
+        <script>
+            $(document).ready(function(){
+              $('[data-toggle="tooltip"]').tooltip();
+            });
+            </script>
     </head>
     <body id="page-top" >
         <!-- Navigation-->
@@ -45,8 +49,8 @@
                     <h3 class="mb-0">
                         Sara
                         <span class="text-primary">Salah Mohamed</span>
-                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                     <button onclick="window.print();" id="printLogo" >
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     <button onclick="window.print();" title="Please use Google Chrome Browser to Print" id="printLogo" data-toggle="tooltip" >
                          <i class="fas fa-1x fa-print" style="color:rgb(189,93,56);"></i>
                     </button>
 
@@ -67,8 +71,8 @@
                     <h3 class="mb-3">Overview</h3>
                     <p class="lead mb-5" id="overviewid">
                         
-                        Experienced software Engineer have deep knowledge in developing and supporting web Applications,Oracle ERP & CRM systems and Desktop Business applications 
-                        using varaity of programming softwares, languages, frameworks and database Engines with good knowledge of system analysis.
+                        Experienced software Engineer with deep knowledge in developing and supporting web Applications,Oracle ERP&CRM systems and Desktop Business applications 
+                        using varaity of programming softwares, languages, frameworks and database Engines also having good knowledge in system analysis.
                     </p>
                     <div class="social-icons" id="SocID">
                         <a class="social-icon" target="_blank" href="https://www.linkedin.com/in/sara-salah-66960510b/"><i class="fab fa-linkedin-in"></i></a>
