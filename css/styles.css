@@ -41,10 +41,16 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+.fa-li{
+  width:100%;
 }
 
 html {
